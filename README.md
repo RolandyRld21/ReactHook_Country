@@ -106,11 +106,11 @@ text, selected region, selected sort option, favorites-only mode, selected
 country modal, and hook activity history.
 
 ```jsx
-const [query, setQuery] = useState("");
-const [region, setRegion] = useState("all");
-const [sortBy, setSortBy] = useState("name");
-const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
-const [selectedCountry, setSelectedCountry] = useState(null);
+const [query, setQuery] = useState(""); //search input value
+const [region, setRegion] = useState("all"); // Region of the country
+const [sortBy, setSortBy] = useState("name"); 
+const [showFavoritesOnly, setShowFavoritesOnly] = useState(false); //Favourites only
+const [selectedCountry, setSelectedCountry] = useState(null); // modal country view
 ```
 
 These values are kept in the main orchestrator because they directly control
